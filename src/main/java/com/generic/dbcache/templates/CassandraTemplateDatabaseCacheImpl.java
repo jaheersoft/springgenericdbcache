@@ -13,7 +13,7 @@ import static com.generic.dbcache.functions.CassandraCacheFunctions.getFromCassa
 public final class CassandraTemplateDatabaseCacheImpl extends AbstractCallerDatabaseCache<CassandraTemplate>
 		implements IGenericTemplateDatabaseCache {
 
-	CassandraTemplateDatabaseCacheImpl(CassandraTemplate caller) {
+	public CassandraTemplateDatabaseCacheImpl(CassandraTemplate caller) {
 		super(caller, Database.CASSANDRA);
 	}
 

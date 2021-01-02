@@ -13,7 +13,7 @@ import static com.generic.dbcache.functions.MongoDBCacheFunctions.getFromMongoDB
 public final class MongoTemplateDatabaseCacheImpl extends AbstractCallerDatabaseCache<MongoTemplate>
 		implements IGenericTemplateDatabaseCache {
 
-	MongoTemplateDatabaseCacheImpl(MongoTemplate caller) {
+	public MongoTemplateDatabaseCacheImpl(MongoTemplate caller) {
 		super(caller, Database.MONGODB);
 	}
 

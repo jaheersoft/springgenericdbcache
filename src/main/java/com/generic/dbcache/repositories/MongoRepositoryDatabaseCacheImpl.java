@@ -13,7 +13,7 @@ public final class MongoRepositoryDatabaseCacheImpl<K, V>
 		extends AbstractCallerDatabaseCache<GenericEntityMongoRepository<K, V>>
 		implements IGenericRepositoryDatabaseCache<K, V> {
 
-	MongoRepositoryDatabaseCacheImpl(GenericEntityMongoRepository<K, V> repository) {
+	public MongoRepositoryDatabaseCacheImpl(GenericEntityMongoRepository<K, V> repository) {
 		super(repository, Database.MONGODB);
 	}
 

@@ -13,7 +13,7 @@ public final class CassandraRepositoryDatabaseCacheImpl<K, V>
 		extends AbstractCallerDatabaseCache<GenericEntityCassandraRepository<K, V>>
 		implements IGenericRepositoryDatabaseCache<K, V> {
 
-	CassandraRepositoryDatabaseCacheImpl(GenericEntityCassandraRepository<K, V> repository) {
+	public CassandraRepositoryDatabaseCacheImpl(GenericEntityCassandraRepository<K, V> repository) {
 		super(repository, Database.CASSANDRA);
 	}
 
